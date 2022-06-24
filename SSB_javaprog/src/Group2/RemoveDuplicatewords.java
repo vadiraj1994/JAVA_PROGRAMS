@@ -8,7 +8,7 @@ public class RemoveDuplicatewords {
 		String s="welcome to india tyss welcome to";
 		String[] str = s.split(" ");
 		//step1:remove duplicate word//
-		
+
 		LinkedHashSet<String> set=new LinkedHashSet<>();
 		for (int i = 0; i < str.length; i++) {
 			set.add(str[i]);
@@ -18,9 +18,9 @@ public class RemoveDuplicatewords {
 		{
 			System.out.print(word+" ");	
 		}
-		
-		}
 
 	}
+
+}
 
 

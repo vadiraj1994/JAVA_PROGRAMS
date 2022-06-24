@@ -5,8 +5,8 @@ import java.util.LinkedHashSet;
 public class PrintDuplicateWord {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String s="welcome to india tyss welcome to";
+
+		String s="welcome to india to";
 		String[] str = s.split(" ");
 		//step1:remove duplicate word//
 		LinkedHashSet<String> set=new LinkedHashSet<>();
@@ -19,15 +19,15 @@ public class PrintDuplicateWord {
 			int count=0;
 			for (int i = 0; i < str.length; i++) 
 			{
-			if(word.equals(str[i]))
+				if(word.equals(str[i]))
+				{
+					count++;
+				}	
+			}
+			if(count>1) 
 			{
-				count++;
+				System.out.print("Duplicate word is: "+word+" ");	
 			}
 		}
-			if(count>1)
-		System.out.print(word+" ");	
-		}
-
 	}
-
 }

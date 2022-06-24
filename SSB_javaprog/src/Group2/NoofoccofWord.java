@@ -5,11 +5,12 @@ import java.util.LinkedHashSet;
 public class NoofoccofWord {
 
 	public static void main(String[] args) {
-		String s="welcome to india tyss welcome";
-		String[] str = s.split(" ");
-		//step1:remove duplicate word//
+		String s="welcome_to_india";
+		String[] str = s.split("_");
+		//step1:Create an Object //
 		LinkedHashSet<String> set=new LinkedHashSet<>();
-		for (int i = 0; i < str.length; i++) {
+		for (int i = 0; i < str.length; i++) 
+		{
 			set.add(str[i]);
 		}
 		//step2:compare each word of set with all words from given string

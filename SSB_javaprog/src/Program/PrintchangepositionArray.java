@@ -1,13 +1,11 @@
 package Program;
 
 import java.util.LinkedHashSet;
-import java.util.Scanner;
 
 public class PrintchangepositionArray {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		String s = sc.nextLine();
+			String s="india";
 		LinkedHashSet<Character> h=new LinkedHashSet<Character>();
 		for (int i = 0; i < s.length(); i++) {
 			h.add(s.charAt(i));

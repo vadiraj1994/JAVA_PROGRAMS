@@ -1,36 +1,35 @@
 package Group1;
 
 import java.util.LinkedHashSet;
-import java.util.Scanner;
 
 public class PrintUniqueChar {
 
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		String s=sc.nextLine();
-		s=s.toLowerCase();
+	public static void main(String[] args) 
+	{
+		String s="india";
 		//step1:remove duplicate word//
-		LinkedHashSet<Character> l=new LinkedHashSet<>();
+		LinkedHashSet<Character> set=new LinkedHashSet<>();
 		for (int i = 0; i < s.length(); i++) 
 		{
-			l.add(s.charAt(i));
+			set.add(s.charAt(i));
 		}
-
 		//step2:compare each word of set with all words from given string
-		for (Character str : l) 
+		for (Character ch : set) 
 		{
 			int count=0;
 			for (int i = 0; i < s.length(); i++) 
 			{
-			if(s.charAt(i)==str)
-			{
-				count++;
+				if(ch==s.charAt(i))
+				{
+					count++;
+				}
 			}
-		}
-			if(count==1)
-		System.out.print(str);	
+			if(count==1) 
+			{
+				System.out.print(ch+" ");	
+			}
+
 		}
 
 	}
-
 }

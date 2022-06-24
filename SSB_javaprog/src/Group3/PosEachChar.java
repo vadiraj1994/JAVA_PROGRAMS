@@ -1,8 +1,5 @@
 package Group3;
 
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-
 public class PosEachChar {
 
 	public static void main(String[] args) 
